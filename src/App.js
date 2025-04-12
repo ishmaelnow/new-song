@@ -8,7 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
-import About from './pages/About';
+import Bio from './pages/Bio';
 import Tour from './pages/Tour';
 import Store from './pages/Store';
 import Gallery from './pages/Gallery';
@@ -24,7 +24,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/bio" element={<Bio />} />
           <Route path="/tour" element={<Tour />} />
           <Route path="/store" element={<Store />} />
           <Route path="/gallery" element={<Gallery />} />

@@ -16,13 +16,15 @@ export default function Home() {
   };
 
   return (
-    <section className="container">
+    <section className="container vibrant-theme">
+      {/* Sidebar */}
       <aside className="sidebar">
-        <h3>🛒 Support the Artist</h3>
-        <p>Thanks for listening and sharing the love!</p>
+        <div className="support-box">
+          <h3>🛒 Support the Artist</h3>
+          <p>Thanks for listening and sharing the love!</p>
+        </div>
 
-        {/* ✅ New Release Section Moved Upfront */}
-        <div className="new-release">
+        <div className="new-release highlight">
           <h3>🎉 New Release: <em>Skyfall Anthem</em></h3>
           <img
             src="/images/skyfall-cover.jpg"
@@ -34,20 +36,25 @@ export default function Home() {
           <p className="italic">🎧 Available soon on Spotify!</p>
         </div>
 
-        {/* ✅ Move artist image below support area for better mobile view */}
-        <div className="artist-profile">
+        <div className="artist-profile flashy">
           <img
             src={artistImage}
             alt="Artist"
-            className="artist-photo"
+            className="artist-photo artist-glow"
           />
           <h1 className="artist-name">Richard Ngenda</h1>
           <p className="tagline">Spreading hope through music</p>
         </div>
       </aside>
 
+      {/* Main Content */}
       <main className="main-content">
-        <div className="section-box">
+        <div className="hero-banner">
+          <h2>🔥 Experience the Sound of a Generation</h2>
+          <p className="tagline">Timeless vocals, deep emotion, and uplifting vibes</p>
+        </div>
+
+        <div className="section-box music-highlight">
           <h3>🎧 Stream My Latest Track</h3>
           <iframe
             className="spotify-player"
@@ -87,7 +94,7 @@ export default function Home() {
           )}
         </div>
 
-        <div className="section-box">
+        <div className="section-box gallery-box">
           <h3>📸 Moments Captured</h3>
           <div className="mini-gallery">
             <img src={img1} alt="Live Performance 1" />

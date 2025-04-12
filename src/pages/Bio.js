@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function About() {
+export default function Bio() {
   return (
     <section>
       <h2>About Me</h2>
